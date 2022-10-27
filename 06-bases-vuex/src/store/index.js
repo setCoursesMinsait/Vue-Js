@@ -1,7 +1,11 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex' //importando el create store
+import counterStore from './counter'
 
-export default createStore( '',{
-  state: {
-    count: 1
+export default createStore({
+  
+
+  modules: {
+    counter: counterStore
   }
+
 })
